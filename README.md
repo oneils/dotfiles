@@ -121,6 +121,7 @@ T + symbol - find the specified symbol and move cursor befor it backward
 noh - turn the highlight off for the found word
 dt + symbol - delete everything befor specified symbol
 df + symbol - delete everything before the specified symbol
+d$ or shift + d - deletes from the current cursor position to the end of the current line
 ```
 
 ### Additional notes
