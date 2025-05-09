@@ -5,6 +5,15 @@ This is a collection of config files (dot files) for different tools.
 
 Find bellow a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this repository contains configuration files for mentioned tools.
 
+
+>[!warning]
+> Install required packages via the `install/install_brew.sh` first
+
+
+___
+
+## Legacy documentation
+
 In order some Plugins are able to work, `pip3` and `pynvim` should be intalled via
 
 ```bash
