@@ -1,0 +1,28 @@
+# Core command line utilities
+bat
+jq
+fzf
+btop
+
+# Development tools
+git
+golangci-lint
+
+# Programming languages and runtimes
+go
+
+# Shell utilities
+zsh
+tmux
+fish
+
+# Applications (casks)
+ghostty
+
+# Fonts
+font-fira-code-nerd-font
+font-jetbrains-mono-nerd-font
+
+# Misc
+neovim
+aerospace
