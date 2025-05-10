@@ -54,7 +54,7 @@ Nvim uses config file at: `~/.config/nvim/init.vim`
 
 ## Vim hot keys
 
-```
+```text
 h - move left
 l - move right
 j - move down

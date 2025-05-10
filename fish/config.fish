@@ -12,3 +12,4 @@ alias vvim vim
 alias vim nvim
 alias v nvim
 
+set -gx PATH /Library/TeX/texbin $PATH
