@@ -2,6 +2,8 @@ vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 vim.opt.termguicolors = true
 
+vim.opt.colorcolumn = "120"
+
 vim.wo.relativenumber = true
 
 -- bootstrap lazy and all plugins

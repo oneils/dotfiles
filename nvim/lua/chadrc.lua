@@ -14,7 +14,7 @@ local M = {}
 M.base46 = {
   theme = "catppuccin",
   transparency = false,
-  theme_toggle = { "catppuccin", "gruvchad" },
+  theme_toggle = { "catppuccin", "gruvbox" },
 
   -- hl_override = {
   --   Normal = { bg = "NONE", fg = nil },
