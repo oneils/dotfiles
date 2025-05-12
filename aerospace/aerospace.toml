@@ -220,11 +220,11 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
  if.app-id = 'ru.keepcoder.Telegram'
- run = "move-node-to-workspace C"
+ run = "move-node-to-workspace X"
 
  [[on-window-detected]]
  if.app-id = 'net.whatsapp.WhatsApp'
- run = "move-node-to-workspace C"
+ run = "move-node-to-workspace X"
 
  [[on-window-detected]]
  if.app-id = 'com.microsoft.VSCode'
@@ -239,4 +239,18 @@ automatically-unhide-macos-hidden-apps = false
  run = "move-node-to-workspace D"
 
 
- 
+ [[on-window-detected]]
+ if.app-id = 'md.obsidian'
+ run = "move-node-to-workspace 2"
+
+ [[on-window-detected]]
+ if.app-id = 'net.shinyfrog.bear'
+ run = "move-node-to-workspace 2"
+
+ [[on-window-detected]]
+ if.app-id = 'com.culturedcode.ThingsMac'
+ run = "move-node-to-workspace 3"
+
+  [[on-window-detected]]
+ if.app-id = 'com.apple.iCal'
+ run = "move-node-to-workspace 3"
