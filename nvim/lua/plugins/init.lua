@@ -100,6 +100,10 @@ return {
       }
     end,
   },
+  {
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
