@@ -7,6 +7,7 @@ Find bellow a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this 
 
 
 >[!warning]
+> Update NVIM_DISTRO="lazyvim" to appropriate distro
 > Install required packages via the `install/install_brew.sh` first
 
 
