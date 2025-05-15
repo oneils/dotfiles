@@ -11,6 +11,20 @@ Find bellow a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this 
 > Install required packages via the `install/install_brew.sh` first
 
 
+## Tailing window management
+
+The following apps/tools are used for tailing windows management:
+- [Aerospace](https://github.com/nikitabobko/AeroSpace) - tiling window manager
+- [JankyBoarders](https://github.com/FelixKratz/JankyBorders) - highlighting currently active window
+
+>[!Info]
+> In case if `install/install_brew.sh` is failed because of any error related to `borders`, try to install it manually:
+>```bash
+>brew tap FelixKratz/formulae
+>brew install borders
+>```
+
+
 ___
 
 ## Legacy documentation
