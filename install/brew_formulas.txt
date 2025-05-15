@@ -3,6 +3,7 @@ bat
 jq
 fzf
 btop
+prettier
 
 # Development tools
 git
