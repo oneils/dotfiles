@@ -15,7 +15,7 @@ ___
 
 ## Legacy documentation
 
-In order some Plugins are able to work, `pip3` and `pynvim` should be intalled via
+In order some Plugins are able to work, `pip3` and `pynvim` should be installed via
 
 ```bash
 sudo pip3 install --upgrade pynvim
@@ -25,7 +25,7 @@ How to install `pip3` see instructions for appropriate OS.
 
 ## Tool for installing plugins for ZSH
 
-[zplug](https://github.com/zplug/zplug) is used for managing zsh plugins.
+[zplug](https://github.com/zplug/zplug) is used for managing `zsh` plugins.
 
 To install zplug:
 
