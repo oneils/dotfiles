@@ -29,6 +29,7 @@ font-jetbrains-mono-nerd-font
 # Misc
 neovim
 aerospace
+borders
 
 pandoc
 basictex
