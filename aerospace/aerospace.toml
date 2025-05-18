@@ -265,3 +265,7 @@ automatically-unhide-macos-hidden-apps = false
  [[on-window-detected]]
  if.app-id = 'com.apple.MobileSMS'
  run = 'layout floating'
+
+  [[on-window-detected]]
+  if.app-id = 'com.ccpgames.eve-online-launcher'
+  run = 'layout floating'
