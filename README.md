@@ -2,30 +2,34 @@
 
 This is a collection of config files (dot files) for different tools.
 
-
 Find bellow a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this repository contains configuration files for mentioned tools.
 
-
->[!warning]
+> [!warning]
 > Update NVIM_DISTRO="lazyvim" to appropriate distro
 > Install required packages via the `install/install_brew.sh` first
-
 
 ## Tailing window management
 
 The following apps/tools are used for tailing windows management:
+
 - [Aerospace](https://github.com/nikitabobko/AeroSpace) - tiling window manager
 - [JankyBoarders](https://github.com/FelixKratz/JankyBorders) - highlighting currently active window
 
->[!Info]
+> [!Info]
 > In case if `install/install_brew.sh` is failed because of any error related to `borders`, try to install it manually:
->```bash
->brew tap FelixKratz/formulae
->brew install borders
->```
+>
+> ```bash
+> brew tap FelixKratz/formulae
+> brew install borders
+> ```
 
+`Ghosty` config file location is uner:
 
-___
+```bash
+"$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+```
+
+---
 
 ## Legacy documentation
 
@@ -34,8 +38,8 @@ In order some Plugins are able to work, `pip3` and `pynvim` should be installed 
 ```bash
 sudo pip3 install --upgrade pynvim
 ```
-How to install `pip3` see instructions for appropriate OS.
 
+How to install `pip3` see instructions for appropriate OS.
 
 ## Tool for installing plugins for ZSH
 
@@ -49,13 +53,13 @@ brew install zplug
 
 ## Vim and NeoVim plugin is used
 
-Used the following vim plugin: https://github.com/junegunn/vim-plug
+Used the following vim plugin: <https://github.com/junegunn/vim-plug>
 
-## Neo vim 
+## Neo vim
 
-### Aliases for Neovim 
+### Aliases for Neovim
 
-Add to `.bashrc` or `.zshrc` 
+Add to `.bashrc` or `.zshrc`
 
 ```bash
 alias vim="nvim"
@@ -64,8 +68,7 @@ alias vi="nvim"
 
 Nvim uses config file at: `~/.config/nvim/init.vim`
 
-`vim-plug` should be additionaly isntalled. See details in README https://github.com/junegunn/vim-plug
-
+`vim-plug` should be additionaly isntalled. See details in README <https://github.com/junegunn/vim-plug>
 
 ## Vim hot keys
 
@@ -150,9 +153,9 @@ d$ or shift + d - deletes from the current cursor position to the end of the cur
 
 ### Additional notes
 
-NOTE:  To remove the highlighting of matches enter:   :nohlsearch
-NOTE:  If you want to ignore case for just one search command, use  \c
-       in the phrase:  /ignore\c  <ENTER>
+NOTE: To remove the highlighting of matches enter: :nohlsearch
+NOTE: If you want to ignore case for just one search command, use \c
+in the phrase: /ignore\c <ENTER>
 
 Some usefull set commands:
 
@@ -191,7 +194,6 @@ cprev - go to prev found matches
 ```
 
 `grep` found all matches and display found results into terminal without vim integration.
-
 
 ## Bookmarks
 
