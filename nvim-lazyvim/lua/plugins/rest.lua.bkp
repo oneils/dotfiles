@@ -1,0 +1,37 @@
+return {
+  "rest-nvim/rest.nvim",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  ft = { "http", "rest" },
+  result = {
+    formatters = {
+      json = "jq", -- Use jq for JSON (must be installed)
+      html = function(body)
+        return vim.fn.system({ "tidy", "-i", "-q", "-" }, body)
+      end,
+    },
+  },
+  config = function()
+    require("rest-nvim").setup({
+      -- highlight = {
+      --   enabled = true,
+      --   timeout = 150,
+      -- },
+      -- result = {
+      --   show_url = true,
+      --   show_http_info = true,
+      --   show_headers = true,
+      -- },
+    })
+    vim.keymap.set("n", "<F5>", function()
+      require("rest-nvim").run()
+    end, { desc = "Send HTTP request" })
+    vim.keymap.set("n", "<F6>", function()
+      require("rest-nvim").run_all()
+    end, { desc = "Send all HTTP requests" })
+    vim.keymap.set("n", "<F7>", function()
+      require("rest-nvim").last()
+    end, { desc = "Rerun last HTTP request" })
+  end,
+}
