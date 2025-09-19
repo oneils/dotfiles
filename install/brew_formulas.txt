@@ -4,6 +4,7 @@ jq
 fzf
 btop
 prettier
+ripgrep
 
 # Development tools
 git
