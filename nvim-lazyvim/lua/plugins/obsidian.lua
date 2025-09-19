@@ -4,7 +4,6 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
-    "hrsh7th/nvim-cmp",
   },
   opts = {
     workspaces = {
@@ -34,7 +33,6 @@ return {
     },
     completion = {
       nvim_cmp = false,
-      min_chars = 2,
     },
     picker = {
       name = "telescope.nvim",
