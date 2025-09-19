@@ -234,29 +234,50 @@ Using hotkeys
 
 ## Tmux
 
-`tmux` will run a new tmux
+`tmux` will run a new tmux session
 
+### Window Management
 ```
-Ctrl + B + % -  split screen vertically
-Ctrl + B + " - split screen horizantally"
-Ctrl + B + arrows - move between tmux screens
+Ctrl + B + % - split screen vertically
+Ctrl + B + " - split screen horizontally
+Ctrl + B + arrows - move between tmux panes
 Ctrl + B + o - swap panes
-Ctrl + B + q - show panes numbers
-Ctrl + B + x - kill pane
+Ctrl + B + q - show pane numbers
+Ctrl + B + x - kill current pane
 Ctrl + B + space - toggle between layouts
 ```
 
-## Resize tmux windows
-
+### Session Management
 ```
-Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
+Ctrl + B + c - create a new tmux window
+Ctrl + B + n - next window
+Ctrl + B + p - previous window
+Ctrl + B + 0-9 - switch to window number (0-9)
+Ctrl + B + , - rename current window
+Ctrl + B + $ - rename current session
+Ctrl + B + d - detach from session
+```
 
-Ctrl + B:source-file ~/.tmux.conf` - reload tmux config file
-Ctrl + B + n - create a new tmux window
-Ctrl + B + 1 - move to the 1st window
-Ctrl + B + $ - rename current tmux's session
+### Configuration
+```
+Ctrl + B + r - reload tmux config file (custom binding)
+```
 
-tmux attach -t session_name - attach to specified session with name `session_name`
+### Session Commands
+```
+tmux - start new session
+tmux new -s session_name - create new session with name
+tmux attach -t session_name - attach to session
+tmux list-sessions - list all sessions
+tmux kill-session -t session_name - kill specific session
+```
+
+### Copy Mode (Vi-style)
+```
+Ctrl + B + [ - enter copy mode
+Space - start selection (in copy mode)
+Enter - copy selection (in copy mode)
+q - quit copy mode
 ```
 
 ## Additional useful links
