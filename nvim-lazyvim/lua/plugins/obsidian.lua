@@ -32,11 +32,10 @@ return {
     attachments = {
       img_folder = "attachments",
     },
-    -- completion handled by cmp.lua
-    -- completion = {
-    --   nvim_cmp = true,
-    --   min_chars = 2,
-    -- },
+    completion = {
+      nvim_cmp = false,
+      min_chars = 2,
+    },
     picker = {
       name = "telescope.nvim",
     },
