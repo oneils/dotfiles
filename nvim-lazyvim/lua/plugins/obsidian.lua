@@ -42,6 +42,9 @@ return {
     completion = {
       nvim_cmp = false,
     },
+    ui = {
+      enable = false
+    },
     picker = {
       name = "telescope.nvim",
     },
