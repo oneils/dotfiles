@@ -16,6 +16,14 @@ return {
     notes_subdir = "01 - Inbox",
     new_notes_location = "notes_subdir",
 
+    note_id_func = function(title)
+      if title ~= nil then
+        return title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+      else
+        return tostring(os.time()) .. "-" .. string.upper(string.sub(tostring(os.time()), -4))
+      end
+    end,
+
     daily_notes = {
       folder = "02- Daily",
       date_format = "%d-%m-%Y",
