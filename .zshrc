@@ -29,6 +29,7 @@ DISABLE_UPDATE_PROMPT=true
 
 alias vim="nvim"
 alias vi="nvim"
+alias obs="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes' && nvim"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alexeybo/.oh-my-zsh"

@@ -11,5 +11,6 @@ set -gx EDITOR nvim
 alias vvim vim
 alias vim nvim
 alias v nvim
+alias obs="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes' && nvim"
 
 set -gx PATH /Library/TeX/texbin $PATH
