@@ -27,6 +27,14 @@ return {
       folder = "Templates",
       date_format = "%Y-%m-%d-%a",
       time_format = "%H:%M",
+      substitutions = {
+        yesterday = function()
+          return os.date("%Y-%m-%d", os.time() - 86400)
+        end,
+        ["date:YYYY-MM-DD"] = function()
+          return os.date("%Y-%m-%d")
+        end,
+      },
     },
     attachments = {
       img_folder = "attachments",
