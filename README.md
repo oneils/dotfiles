@@ -232,6 +232,17 @@ Using hotkeys
  Ctrl + j opens a new window at bottom or switch to the bottom window
 ```
 
+## Markdown note
+
+```text
+  Key commands:
+  - <leader>ml - Follow link under cursor
+  - gd - Also follows links (standard LSP)
+  - <leader>mb - Go back to previous location
+  - <leader>fl - Find markdown files with Telescope
+```
+
+
 ## Tmux
 
 `tmux` will run a new tmux session
