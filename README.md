@@ -238,10 +238,20 @@ Using hotkeys
   Key commands:
   - <leader>ml - Follow link under cursor
   - gd - Also follows links (standard LSP)
-  - <leader>mb - Go back to previous location
   - <leader>fl - Find markdown files with Telescope
 ```
 
+## Obsidian Plugin
+
+```text
+  Key commands:
+  - <leader>ot - Open Obsidian Template
+  - <leader>on - Create New Obsidian Note
+  - <leader>oo - Open Obsidian
+  - <leader>os - Search Obsidian Notes
+  - <leader>oD - Open Obsidian Dailies
+  - <leader>od - Insert Date
+```
 
 ## Tmux
 

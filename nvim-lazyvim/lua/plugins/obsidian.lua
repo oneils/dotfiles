@@ -18,7 +18,7 @@ return {
 
     daily_notes = {
       folder = "02- Daily",
-      date_format = "%Y-%m-%d",
+      date_format = "%d-%m-%Y",
       alias_format = "%B %-d, %Y",
       default_tags = { "daily" },
       template = "Daily Template",
@@ -59,6 +59,7 @@ return {
     { "<leader>on", "<cmd>ObsidianNew<cr>", desc = "Obsidian New Note" },
     { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian Open" },
     { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian Search" },
+    { "<leader>oD", "<cmd>ObsidianDailies<cr>", desc = "Obsidian Dailies" },
     {
       "<leader>od",
       function()
