@@ -4,9 +4,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     lazy = false,
     config = function()
-      require("render-markdown").setup({
-        render_modes = { "n", "c", "t" },
-      })
+      require("render-markdown").setup({})
     end,
   },
   {
