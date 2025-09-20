@@ -11,6 +11,7 @@ return {
         "shellcheck",
         "shfmt",
         "gopls",
+        "marksman",
         "markdownlint",
         "html-lsp",
         "htmx-lsp",
