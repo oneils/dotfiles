@@ -45,13 +45,13 @@ return {
       },
     },
     attachments = {
-      img_folder = "attachments",
+      img_folder = "_attachments",
     },
     completion = {
       nvim_cmp = false,
     },
     ui = {
-      enable = false
+      enable = false,
     },
     picker = {
       name = "telescope.nvim",
@@ -71,6 +71,7 @@ return {
     { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian Open" },
     { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian Search" },
     { "<leader>oD", "<cmd>ObsidianDailies<cr>", desc = "Obsidian Dailies" },
+    { "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Paste Image" },
     {
       "<leader>od",
       function()
