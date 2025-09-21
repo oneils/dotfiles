@@ -3,3 +3,7 @@
 -- Add any additional options here
 --
 vim.opt.colorcolumn = "120"
+
+-- Multi-language spell checking
+vim.opt.spell = true
+vim.opt.spelllang = "en,ru,pl"
