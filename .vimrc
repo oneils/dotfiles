@@ -42,6 +42,9 @@ set shiftwidth=4 "An indent is 4 spaces
 set hlsearch
 set incsearch
 
+" Russian keyboard layout support for Vim hotkeys
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
 " Key mappings
 
 map <C-n> :NERDTreeToggle<CR>

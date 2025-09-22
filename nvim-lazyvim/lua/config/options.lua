@@ -7,3 +7,6 @@ vim.opt.colorcolumn = "120"
 -- Multi-language spell checking
 vim.opt.spell = true
 vim.opt.spelllang = "en,ru,pl"
+
+-- Russian keyboard layout support for Vim hotkeys
+vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
