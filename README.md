@@ -277,6 +277,7 @@ Ctrl + B + 0-9 - switch to window number (0-9)
 Ctrl + B + , - rename current window
 Ctrl + B + $ - rename current session
 Ctrl + B + d - detach from session
+Ctrl + B + , - rename session
 ```
 
 ### Configuration
