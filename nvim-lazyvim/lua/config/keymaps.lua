@@ -4,23 +4,6 @@
 local map = vim.keymap.set
 map("i", "jj", "<ESC>")
 
--- Override: make <leader>fr show recent files scoped to the current cwd
-map("n", "<leader>fr", function()
-  local snacks_ok, snacks = pcall(require, "snacks")
-  if snacks_ok and snacks.picker and snacks.picker.recent then
-    snacks.picker.recent({ filter = { cwd = true } })
-    return
-  end
-
-  local telescope_ok, builtin = pcall(require, "telescope.builtin")
-  if telescope_ok and builtin.oldfiles then
-    builtin.oldfiles({ cwd_only = true })
-    return
-  end
-
-  vim.cmd("Telescope oldfiles")
-end, { desc = "Recent (cwd)" })
-
 -- Markdown headers (only in markdown files)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
