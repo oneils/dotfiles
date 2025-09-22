@@ -79,9 +79,16 @@ j - move down
 k - move up
 ```
 
+## Open links and files
+
+```text
+gx - opens a link into a browser
+gf = opens a file
+```
+
 ## Insert Mode
 
-```
+```text
 a - move cursor at 1 symbol right for editing
 A - move cursor  at the end of line for editing
 o - move cursor at the new line for editing
@@ -90,18 +97,20 @@ O - create a new line above for additing
 
 ## Copy-Paste
 
-```
+```text
 yy or Y - copy line
 dd - delete (cutting) the line
 
 p - paste copied(deleted) text after current line
 P - paste copied(deleted) text before current line
 yw - copies a word under cursor
+J - joins 2 lines of text with space between them
+gJ - joins 2 lines of text without space between them
 ```
 
 ## Navigation
 
-```
+```text
 gg - move cursor at the begging of the file
 G  - move cursor at the ent of the file
 w  - move to the next word
@@ -130,7 +139,7 @@ Into command mode print `2w` to move to the next word twice
 
 ## Searching
 
-```
+```text
 f + symbol - find specified `symbol` at current line (; finds the next matching symbol)
 F + symbol - fund specified `symbol` back
 / + any symbol or word to find it at the whole document from top to bottom
@@ -159,7 +168,7 @@ in the phrase: /ignore\c <ENTER>
 
 Some usefull set commands:
 
-```
+```text
 ic - 'ignorecase'       ignore upper/lower case when searching
 is - 'incsearch'        show partial matches for a search phrase
 hls - 'hlsearch'        highlight all matching phrases
@@ -167,7 +176,7 @@ hls - 'hlsearch'        highlight all matching phrases
 
 ## Replace
 
-```
+```text
 s/old/new - replaces first matching of `old` text with `new` value into current line
 s/old/new/g - replaces all matches of `old` text with `new` value into current line
 #,#s/old/new/g - changes every occurrence of a character string between two lines, where #,# are the line numbers of the range
@@ -177,7 +186,7 @@ s/old/new/g - replaces all matches of `old` text with `new` value into current l
 
 ## Edit
 
-```
+```text
 r + symbol - replace char under cursor by specified symbol
 ce - change text from cursor to the end of the word
 c$ - change text from cursor to the end of line.
@@ -187,7 +196,7 @@ c$ - change text from cursor to the end of line.
 
 This can be achived either by `vimgrep` or `grep`
 
-```
+```text
 vimgrep def * - find any matches of def at all files
 cnext - go to the next found matches
 cprev - go to prev found matches
@@ -197,7 +206,7 @@ cprev - go to prev found matches
 
 ## Bookmarks
 
-```
+```text
 m + bookmar_name - create a bookmark with the name `bookmark_name` for current line.
 mD - symbol - create a global bookmark with the name `symbol` (instead of D can be another char in UPPER case)
 ```
@@ -225,7 +234,7 @@ function looks like
 
 Using hotkeys
 
-```
+```text
  Ctrl + k opens a new window above current or switch to window above
  Ctrl + h opens a new window at right or switch to the right window
  Ctrl + l opens a new window at left or switch to lelft window
@@ -258,7 +267,8 @@ Using hotkeys
 `tmux` will run a new tmux session
 
 ### Window Management
-```
+
+```text
 Ctrl + B + % - split screen vertically
 Ctrl + B + " - split screen horizontally
 Ctrl + B + arrows - move between tmux panes
@@ -269,7 +279,8 @@ Ctrl + B + space - toggle between layouts
 ```
 
 ### Session Management
-```
+
+```text
 Ctrl + B + c - create a new tmux window
 Ctrl + B + n - next window
 Ctrl + B + p - previous window
@@ -281,12 +292,14 @@ Ctrl + B + , - rename session
 ```
 
 ### Configuration
-```
+
+```text
 Ctrl + B + r - reload tmux config file (custom binding)
 ```
 
 ### Session Commands
-```
+
+```text
 tmux - start new session
 tmux new -s session_name - create new session with name
 tmux attach -t session_name - attach to session
@@ -295,7 +308,8 @@ tmux kill-session -t session_name - kill specific session
 ```
 
 ### Copy Mode (Vi-style)
-```
+
+```text
 Ctrl + B + [ - enter copy mode
 Space - start selection (in copy mode)
 Enter - copy selection (in copy mode)
