@@ -14,3 +14,4 @@ alias v nvim
 alias obs="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes' && nvim"
 
 set -gx PATH /Library/TeX/texbin $PATH
+# source ~/.sdkman/bin/sdkman-init.sh
