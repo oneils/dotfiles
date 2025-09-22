@@ -276,6 +276,7 @@ Ctrl + B + o - swap panes
 Ctrl + B + q - show pane numbers
 Ctrl + B + x - kill current pane
 Ctrl + B + space - toggle between layouts
+Ctrl + B + ! - breaks pane into a separate windo
 ```
 
 ### Session Management
