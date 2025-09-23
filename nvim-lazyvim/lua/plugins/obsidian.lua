@@ -18,7 +18,7 @@ return {
 
     note_id_func = function(title)
       if title ~= nil then
-        return title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+        return title
       else
         return tostring(os.time()) .. "-" .. string.upper(string.sub(tostring(os.time()), -4))
       end
@@ -151,6 +151,7 @@ return {
       desc = "Obsidian Weekly",
     },
     { "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Paste Image" },
+    { "<leader>of", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
     {
       "<leader>od",
       function()
