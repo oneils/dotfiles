@@ -10,6 +10,7 @@ ripgrep
 git
 golangci-lint
 lazygit
+lazydocker
 
 # Programming languages and runtimes
 go
