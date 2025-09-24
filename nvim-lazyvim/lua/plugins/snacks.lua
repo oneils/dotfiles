@@ -8,5 +8,8 @@ return {
         },
       },
     },
+    image = {
+      enabled = true,
+    },
   },
 }

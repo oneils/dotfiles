@@ -41,3 +41,4 @@ basictex
 
 # images for obsidian
 pngpaste
+imagemagick
