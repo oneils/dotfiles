@@ -9,7 +9,5 @@ vim.opt.spell = true
 vim.opt.spelllang = "en,ru,pl"
 
 -- Russian keyboard layout support for Vim hotkeys
-vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
-
--- Disable tabs/bufferline
-vim.opt.showtabline = 0
+vim.opt.langmap =
+"ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
