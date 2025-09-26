@@ -20,6 +20,7 @@ zsh
 tmux
 fish
 yazi
+tree
 
 # Applications (casks)
 ghostty
