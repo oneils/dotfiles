@@ -49,6 +49,10 @@ return {
         ["date:YYYY-MM-DD"] = function()
           return os.date("%Y-%m-%d")
         end,
+        ["date:YYYY-MM"] = function()
+          return os.date("%Y-%m")
+        end,
+
       },
     },
     attachments = {
@@ -74,10 +78,10 @@ return {
   },
   keys = {
     { "<leader>ot", "<cmd>ObsidianTemplate<cr>", desc = "Obsidian Template" },
-    { "<leader>on", "<cmd>ObsidianNew<cr>", desc = "Obsidian New Note" },
-    { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian Open" },
-    { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian Search" },
-    { "<leader>oD", "<cmd>ObsidianDailies<cr>", desc = "Obsidian Dailies" },
+    { "<leader>on", "<cmd>ObsidianNew<cr>",      desc = "Obsidian New Note" },
+    { "<leader>oo", "<cmd>ObsidianOpen<cr>",     desc = "Obsidian Open" },
+    { "<leader>os", "<cmd>ObsidianSearch<cr>",   desc = "Obsidian Search" },
+    { "<leader>oD", "<cmd>ObsidianDailies<cr>",  desc = "Obsidian Dailies" },
     {
       "<leader>ow",
       function()
@@ -134,7 +138,7 @@ return {
           else
             -- Default content if no template
             content =
-              string.format("# Week %s, %s\n\n## Goals\n\n## Completed\n\n## Notes\n\n", os.date("%W"), os.date("%Y"))
+                string.format("# Week %s, %s\n\n## Goals\n\n## Completed\n\n## Notes\n\n", os.date("%W"), os.date("%Y"))
           end
 
           -- Write the file
@@ -150,7 +154,7 @@ return {
       end,
       desc = "Obsidian Weekly",
     },
-    { "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Paste Image" },
+    { "<leader>op", "<cmd>ObsidianPasteImg<cr>",   desc = "Paste Image" },
     { "<leader>of", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
     {
       "<leader>od",
