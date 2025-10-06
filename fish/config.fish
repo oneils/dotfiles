@@ -15,3 +15,5 @@ alias obs="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes
 
 set -gx PATH /Library/TeX/texbin $PATH
 # source ~/.sdkman/bin/sdkman-init.sh
+alias python python3
+fish_add_path $HOME/.local/bin
