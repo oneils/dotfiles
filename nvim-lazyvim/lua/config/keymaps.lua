@@ -4,6 +4,9 @@
 local map = vim.keymap.set
 map("i", "jj", "<ESC>")
 
+-- Make change operation (c) not copy to clipboard
+map({ "n", "v" }, "c", '"_c', { desc = "Change without yanking" })
+
 -- Markdown headers (only in markdown files)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
