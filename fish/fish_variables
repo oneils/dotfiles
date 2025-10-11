@@ -41,4 +41,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/Users/lex/go/bin\x1e/opt/homebrew/Cellar/mtr/0\x2e95/sbin\x1e/Users/lex/\x2eemacs\x2ed/bin\x1e/Applications/Racket/bin\x1e/opt/homebrew/bin\x1e/usr/local/protobuf/bin
+SETUVAR fish_user_paths:/Users/lex/go/bin\x1e/opt/homebrew/Cellar/mtr/0\x2e95/sbin\x1e/Users/lex/\x2eemacs\x2ed/bin\x1e/Applications/Racket/bin\x1e/opt/homebrew/bin\x1e/usr/local/protobuf/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS

@@ -30,6 +30,7 @@ font-fira-code-nerd-font
 font-jetbrains-mono-nerd-font
 font-caskaydia-mono-nerd-font
 font-fira-mono-nerd-font
+font-blex-mono-nerd-font
 
 # Misc
 neovim
