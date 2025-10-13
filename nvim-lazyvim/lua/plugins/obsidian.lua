@@ -52,6 +52,9 @@ return {
         ["date:YYYY-MM"] = function()
           return os.date("%Y-%m")
         end,
+        ["date:YYYY"] = function()
+          return os.date("%Y")
+        end
 
       },
     },
