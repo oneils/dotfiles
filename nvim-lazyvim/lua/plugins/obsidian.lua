@@ -20,7 +20,9 @@ return {
       if title ~= nil then
         return title
       else
-        return tostring(os.time()) .. "-" .. string.upper(string.sub(tostring(os.time()), -4))
+        local date = os.date("%Y%m%d")
+        local random = math.random(1000, 9999)
+        return date .. "-" .. random
       end
     end,
 

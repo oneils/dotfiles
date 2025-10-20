@@ -125,6 +125,7 @@ dd - delete current line
 gf - go the file under current cursor (e.g. new File(./my-file.txt) will go to the my-file.txt in case if such file exists into current path)
 Ctrl + g - shos wyour location in the file and the file status.
 G - move cursor to the end of file
+gg - move cursor to the beginning of the file
 20gg - will move cursor to specified line number 20
 
 Ctrl + O - returns back to the place where cursor was before search
