@@ -9,6 +9,7 @@ ripgrep
 # Development tools
 git
 golangci-lint
+delve
 lazygit
 lazydocker
 
