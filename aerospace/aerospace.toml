@@ -250,6 +250,10 @@ automatically-unhide-macos-hidden-apps = false
   if.app-id = 'com.jetbrains.intellij'
   run = "move-node-to-workspace I"
 
+  [[on-window-detected]]
+  if.app-id = 'com.apple.Music'
+  run = "move-node-to-workspace M"
+
 # [[on-window-detected]]
 # if.app-id = 'dev.zed.Zed'
 # run = "move-node-to-workspace D"
