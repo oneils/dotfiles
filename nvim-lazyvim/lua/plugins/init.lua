@@ -72,7 +72,7 @@ return {
         "godot_resource",
         "gdshader"
       },
-      auto_install = true
+      -- auto_install = true
     },
   },
 }
