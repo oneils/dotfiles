@@ -18,6 +18,8 @@ return {
         "lua-language-server",
         "css-lsp",
         "prettier",
+        "gdscript",
+        "gdtoolkit"
       },
     },
     config = function(_, opts)
@@ -66,7 +68,11 @@ return {
         "java",
         "http",
         "gomod",
+        "gdscript",
+        "godot_resource",
+        "gdshader"
       },
+      auto_install = true
     },
   },
 }
