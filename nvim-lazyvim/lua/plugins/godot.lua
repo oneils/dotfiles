@@ -14,14 +14,14 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
+    "folke/snacks.nvim",
     event = "VeryLazy",
     config = function()
       -- Start Godot server if project.godot exists
       local projectFile = io.open(vim.fn.getcwd() .. '/project.godot', 'r')
       if projectFile then
         io.close(projectFile)
-        vim.fn.serverstart './godothost'
+        vim.fn.serverstart("./godothost")
       end
     end,
   },
