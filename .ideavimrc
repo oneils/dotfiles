@@ -2,3 +2,7 @@ set relativenumber
 set cursorline
 
 inoremap jj <Esc>
+
+
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
