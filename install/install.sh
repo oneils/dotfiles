@@ -11,6 +11,9 @@ NVIM_DISTRO="lazyvim"
 FISH_BACKUP="$HOME/.config/fish.bkp"
 FISH_CFG="$HOME/.config/fish"
 
+IDEA_VIM_CFG="$HOME/.ideavimrc"
+IDEA_VIM_BKP="$HOME/.ideavimrc.bkp"
+
 # Create symbolic links for your configs
 echo "Creating symlinks..."
 
@@ -61,6 +64,30 @@ echo -e "\tSetting up Fish config..."
 mkdir -p "$FISH_CFG"
 ln -sf "$DOTFILES/fish/"* "$FISH_CFG"/
 echo -e "\tsimlinks for Fish created"
+
+
+# === IDEAVIM ===
+
+  # remove existing bkp file
+  if [ -f "$IDEA_VIM_BKP" ]; then
+    echo -e "\tRemoving existing backup file"
+    rm -f "$IDEA_VIM_BKP" || {
+      echo -e "\tError: Failed to remove existing backup at $IDEA_VIM_BKP"
+      exit 1
+    }
+  fi
+
+  # backup existing config file
+  if [ -f "$IDEA_VIM_CFG" ]; then
+    echo -e "\tDoing backup of existing ideavimrc file"
+    mv -f "$IDEA_VIM_CFG" "$IDEA_VIM_BKP"
+    echo -e "\tExisting ideavimrc file moved to $IDEA_VIM_BKP"
+  fi
+
+
+echo -e "\tSetting up ideavimrc..."
+ln -sf "$DOTFILES/.ideavimrc" "$IDEA_VIM_CFG"
+echo -e "\tsimlinks for ideavim created"
 
 # ==== MacOS specific ====
 uname=$(uname)
