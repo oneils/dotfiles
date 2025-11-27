@@ -1,4 +1,4 @@
 set relativenumber
 set cursorline
 
-
+inoremap jj <Esc>

@@ -86,7 +86,7 @@ echo -e "\tsimlinks for Fish created"
 
 
 echo -e "\tSetting up ideavimrc..."
-ln -sf "$DOTFILES/.ideavimrc" "$IDEA_VIM_CFG"
+ln -s "$DOTFILES/.ideavimrc" "$IDEA_VIM_CFG"
 echo -e "\tsimlinks for ideavim created"
 
 # ==== MacOS specific ====
