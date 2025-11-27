@@ -4,6 +4,17 @@
 -- In the Godot Text Editor configs specify the following `External Flags` for running nvim:
 --  `--server ./godothost --remote-send "<C-\><C-N>:n {file}<CR>{line}G{col}|`"
 
+-- Start Godot server if project.godot exists
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    local projectFile = io.open(vim.fn.getcwd() .. '/project.godot', 'r')
+    if projectFile then
+      io.close(projectFile)
+      vim.fn.serverstart("./godothost")
+    end
+  end,
+})
+
 return {
   {
     "neovim/nvim-lspconfig",
@@ -12,17 +23,5 @@ return {
         gdscript = {},
       },
     },
-  },
-  {
-    "folke/snacks.nvim",
-    event = "VeryLazy",
-    config = function()
-      -- Start Godot server if project.godot exists
-      local projectFile = io.open(vim.fn.getcwd() .. '/project.godot', 'r')
-      if projectFile then
-        io.close(projectFile)
-        vim.fn.serverstart("./godothost")
-      end
-    end,
   },
 }
