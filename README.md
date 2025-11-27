@@ -29,6 +29,23 @@ The following apps/tools are used for tailing windows management:
 "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 ```
 
+## fzf
+
+Make sure key bindings are set in the config file. 
+For fish:
+
+```fish
+fzf --fish | source
+```
+
+Hot keys
+
+```
+Ctrl+T — paste selected files/folders into command line
+Ctrl+R — search command history
+Alt+C — cd into selected directory
+cd /path/**<Tab> — fuzzy complete paths
+```
 ---
 
 ## Legacy documentation
