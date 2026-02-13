@@ -7,7 +7,6 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   opts = {
-    legacy_commands = true,
     workspaces = {
       {
         name = "notes",
@@ -62,7 +61,7 @@ return {
       },
     },
     attachments = {
-      img_folder = "_attachments",
+      folder = "_attachments",
     },
     completion = {
       nvim_cmp = false,
@@ -73,21 +72,24 @@ return {
     picker = {
       name = "telescope.nvim",
     },
-    mappings = {
-      ["gf"] = {
-        action = function()
-          return require("obsidian").util.gf_passthrough()
-        end,
-        opts = { noremap = false, expr = true, buffer = true },
-      },
+    callbacks = {
+      enter_note = function()
+        vim.keymap.set("n", "gf", function()
+          if require("obsidian").util.cursor_on_markdown_link(nil, nil, true) then
+            return "<cmd>Obsidian follow_link<cr>"
+          else
+            return "gf"
+          end
+        end, { buffer = true, noremap = false, expr = true })
+      end,
     },
   },
   keys = {
-    { "<leader>ot", "<cmd>ObsidianTemplate<cr>", desc = "Obsidian Template" },
-    { "<leader>on", "<cmd>ObsidianNew<cr>",      desc = "Obsidian New Note" },
-    { "<leader>oo", "<cmd>ObsidianOpen<cr>",     desc = "Obsidian Open" },
-    { "<leader>os", "<cmd>ObsidianSearch<cr>",   desc = "Obsidian Search" },
-    { "<leader>oD", "<cmd>ObsidianDailies<cr>",  desc = "Obsidian Dailies" },
+    { "<leader>ot", "<cmd>Obsidian template<cr>",    desc = "Obsidian Template" },
+    { "<leader>on", "<cmd>Obsidian new<cr>",          desc = "Obsidian New Note" },
+    { "<leader>oo", "<cmd>Obsidian open<cr>",         desc = "Obsidian Open" },
+    { "<leader>os", "<cmd>Obsidian search<cr>",       desc = "Obsidian Search" },
+    { "<leader>oD", "<cmd>Obsidian dailies<cr>",      desc = "Obsidian Dailies" },
     {
       "<leader>ow",
       function()
@@ -160,8 +162,8 @@ return {
       end,
       desc = "Obsidian Weekly",
     },
-    { "<leader>op", "<cmd>ObsidianPasteImg<cr>",   desc = "Paste Image" },
-    { "<leader>of", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
+    { "<leader>op", "<cmd>Obsidian paste_img<cr>",    desc = "Paste Image" },
+    { "<leader>of", "<cmd>Obsidian follow_link<cr>",  desc = "Follow Link" },
     {
       "<leader>od",
       function()
