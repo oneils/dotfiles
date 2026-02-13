@@ -1,11 +1,13 @@
 return {
-  "epwalsh/obsidian.nvim",
-  event = { "BufReadPre *.md", "BufNewFile *.md" },
+  "obsidian-nvim/obsidian.nvim",
+  version = "*",
+  ft = "markdown",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
   },
   opts = {
+    legacy_commands = true,
     workspaces = {
       {
         name = "notes",
@@ -57,7 +59,6 @@ return {
         ["date:YYYY"] = function()
           return os.date("%Y")
         end
-
       },
     },
     attachments = {
