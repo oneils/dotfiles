@@ -48,6 +48,20 @@ cd /path/**<Tab> — fuzzy complete paths
 ```
 ---
 
+## fd
+
+`fd` is a better `find` command. 
+
+```text
+fd "kitty" -t f
+```
+
+Find and exclude:
+
+```text
+fd "route" --exclude "test"
+```
+
 ## Legacy documentation
 
 In order some Plugins are able to work, `pip3` and `pynvim` should be installed via

@@ -5,6 +5,12 @@ fzf
 btop
 prettier
 ripgrep
+zsh
+tmux
+fish
+yazi
+tree
+fd
 
 # Development tools
 git
@@ -15,13 +21,6 @@ lazydocker
 
 # Programming languages and runtimes
 go
-
-# Shell utilities
-zsh
-tmux
-fish
-yazi
-tree
 
 # Applications (casks)
 ghostty
