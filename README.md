@@ -87,6 +87,12 @@ Nvim uses config file at: `~/.config/nvim/init.vim`
 
 `vim-plug` should be additionaly isntalled. See details in README <https://github.com/junegunn/vim-plug>
 
+## Search for Key Map
+
+```text
+<leader> sk
+```
+
 ## Vim hot keys
 
 ```text

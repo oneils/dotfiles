@@ -25,6 +25,7 @@ tree
 
 # Applications (casks)
 ghostty
+kitty
 
 # Fonts
 font-fira-code-nerd-font
