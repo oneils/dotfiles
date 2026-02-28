@@ -151,7 +151,17 @@ if [[ "$uname" == "Darwin" ]]; then
   . "$DOTFILES/install/macos.sh"
 fi
 
-# Tmux
-# ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
+# ==== Tmux ====
+echo "Setting up Tmux config..."
+ln -sf "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
+echo -e "\tsymlink for Tmux created"
+
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  echo -e "\tInstalling TPM (Tmux Plugin Manager)..."
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+  echo -e "\tTPM installed"
+else
+  echo -e "\tTPM already installed, skipping"
+fi
 
 echo "Done! Your config files have been linked."
