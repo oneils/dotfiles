@@ -315,3 +315,11 @@ automatically-unhide-macos-hidden-apps = false
   [[on-window-detected]]
   if.app-id = 'com.ccpgames.eve-online-launcher'
   run = 'layout floating'
+
+  [[on-window-detected]]
+  if.app-id = 'notion.id'
+  run = "move-node-to-workspace 4"
+
+  [[on-window-detected]]
+  if.app-id = 'com.fastmail.mac.Fastmail'
+  run = "move-node-to-workspace 3"
