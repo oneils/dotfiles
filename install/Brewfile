@@ -1,0 +1,77 @@
+# Taps
+tap "FelixKratz/formulae"
+tap "nikitabobko/tap"
+tap "umputun/apps"
+
+# Core CLI utilities
+brew "bat"
+brew "jq"
+brew "fzf"
+brew "btop"
+brew "prettier"
+brew "ripgrep"
+brew "zsh"
+brew "tmux"
+brew "fish"
+brew "yazi"
+brew "tree"
+brew "fd"
+brew "wget"
+
+brew "ipcalc"
+brew "iperf3"
+
+# Development tools
+brew "git"
+brew "golangci-lint"
+brew "golang-migrate"
+brew "delve"
+brew "lazygit"
+brew "lazydocker"
+brew "node"
+brew "protobuf"
+brew "protoc-gen-go"
+brew "protoc-gen-go-grpc"
+
+# Languages
+brew "go"
+
+# Neovim + misc
+brew "neovim"
+brew "borders"
+brew "pandoc"
+brew "pngpaste"
+brew "imagemagick"
+brew "umputun/apps/spot"
+brew "prettier"
+
+
+brew "yt-dlp"
+brew "ghostscript"
+brew "hugo"
+brew "mtr"
+brew "nmap"
+brew "pngpaste"
+brew "imagemagick"
+
+
+# Applications (casks)
+cask "ghostty"
+cask "kitty"
+cask "aerospace"
+cask "betterdisplay"
+cask "jordanbaird-ice"
+cask "basictex"
+
+
+# Fonts
+cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-caskaydia-mono-nerd-font"
+cask "font-fira-mono-nerd-font"
+cask "font-blex-mono-nerd-font"
+cask "font-ubuntu-mono-nerd-font"
+cask "font-ubuntu-nerd-font"
+
+cask "mockoon"
+cask "bruno"
