@@ -20,6 +20,10 @@ GHOSTTY_CFG="$HOME/.config/ghostty"
 IDEA_VIM_CFG="$HOME/.ideavimrc"
 IDEA_VIM_BKP="$HOME/.ideavimrc.bkp"
 
+LAZYGIT_CFG="$HOME/.config/lazygit"
+LAZYGIT_BKP="$HOME/.config/lazygit.bkp"
+LAZYGIT_MACOS_CFG="$HOME/Library/Application Support/lazygit"
+
 # Create symbolic links for your configs
 echo "Creating symlinks..."
 
@@ -144,6 +148,35 @@ echo -e "\tsimlinks for Ghostty created"
 echo -e "\tSetting up ideavimrc..."
 ln -s "$DOTFILES/.ideavimrc" "$IDEA_VIM_CFG"
 echo -e "\tsimlinks for ideavim created"
+
+# ==== Lazygit ====
+echo "Setting up Lazygit config..."
+
+if [ -d "$LAZYGIT_BKP" ]; then
+  echo -e "\tRemoving existing backup directory"
+  rm -rf "$LAZYGIT_BKP" || {
+    echo -e "\tError: Failed to remove existing backup at $LAZYGIT_BKP"
+    exit 1
+  }
+fi
+
+if [ -d "$LAZYGIT_CFG" ] && [ ! -L "$LAZYGIT_CFG" ]; then
+  echo -e "\tDoing backup of existing Lazygit config directory"
+  mv -f "$LAZYGIT_CFG" "$LAZYGIT_BKP"
+  echo -e "\tExisting Lazygit configs folder moved to $LAZYGIT_BKP"
+fi
+
+mkdir -p "$LAZYGIT_CFG"
+ln -sf "$DOTFILES/lazygit/config.yml" "$LAZYGIT_CFG/config.yml"
+echo -e "\tsymlink for Lazygit created"
+
+# On macOS, also symlink config.yml into ~/Library/Application Support/lazygit
+if [[ "$(uname)" == "Darwin" ]]; then
+  mkdir -p "$LAZYGIT_MACOS_CFG"
+  ln -sf "$DOTFILES/lazygit/config.yml" "$LAZYGIT_MACOS_CFG/config.yml"
+  echo -e "\tmacOS Lazygit config.yml symlinked"
+fi
+
 
 # ==== MacOS specific ====
 uname=$(uname)
