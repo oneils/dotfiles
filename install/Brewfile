@@ -62,6 +62,7 @@ cask "aerospace"
 cask "betterdisplay"
 cask "jordanbaird-ice"
 cask "basictex"
+cask yaak #postman alternative
 
 
 # Fonts
