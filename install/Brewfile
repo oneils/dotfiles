@@ -76,3 +76,5 @@ cask "font-ubuntu-nerd-font"
 
 cask "mockoon"
 cask "bruno"
+
+brew "tlrc" # The tldr pages are a community effort to simplify the beloved man pages with practical examples.
