@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 map("i", "jj", "<ESC>")
+map("n", "<leader><CR>", ":source ~/.config/nvim/init.lua<CR>", { desc = "Source init.lua" })
 
 -- Make change operation (c) not copy to clipboard
 map({ "n", "v" }, "c", '"_c', { desc = "Change without yanking" })
