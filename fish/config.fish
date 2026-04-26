@@ -24,3 +24,7 @@ set -gx PATH /Library/TeX/texbin $PATH
 # source ~/.sdkman/bin/sdkman-init.sh
 alias python python3
 fish_add_path $HOME/.local/bin
+
+# Added by Antigravity
+# fish_add_path /Users/lex/.antigravity/antigravity/bin
+export PATH="$HOME/.local/bin:$PATH"
