@@ -3,6 +3,7 @@
 -- Add any additional options here
 --
 vim.opt.colorcolumn = "120"
+vim.opt.scrolloff = 8
 
 -- Multi-language spell checking
 vim.opt.spell = true
