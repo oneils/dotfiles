@@ -4,6 +4,9 @@
 local map = vim.keymap.set
 map("i", "jj", "<ESC>")
 map("n", "<leader><CR>", ":source ~/.config/nvim/init.lua<CR>", { desc = "Source init.lua" })
+map("n", "<leader>Y", 'gg"+yG', { desc = "Yank entire file to clipboard" })
+map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
 -- Make change operation (c) not copy to clipboard
 map({ "n", "v" }, "c", '"_c', { desc = "Change without yanking" })
