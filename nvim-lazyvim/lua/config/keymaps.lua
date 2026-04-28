@@ -7,6 +7,8 @@ map("n", "<leader><CR>", ":source ~/.config/nvim/init.lua<CR>", { desc = "Source
 map("n", "<leader>Y", 'gg"+yG', { desc = "Yank entire file to clipboard" })
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+map("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center" })
+map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
 
 -- Make change operation (c) not copy to clipboard
 map({ "n", "v" }, "c", '"_c', { desc = "Change without yanking" })

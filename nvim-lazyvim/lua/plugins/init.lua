@@ -75,4 +75,8 @@ return {
       -- auto_install = true
     },
   },
+  {
+    "ThePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+  },
 }
