@@ -28,3 +28,8 @@ fish_add_path $HOME/.local/bin
 # Added by Antigravity
 # fish_add_path /Users/lex/.antigravity/antigravity/bin
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/lex/.lmstudio/bin
+# End of LM Studio CLI section
+
