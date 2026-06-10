@@ -5,6 +5,10 @@
 vim.opt.colorcolumn = "120"
 vim.opt.scrolloff = 8
 
+-- set tab size at 4 instead of default 2
+vim.opt.tabstop = 4
+
+
 -- Multi-language spell checking
 vim.opt.spell = true
 vim.opt.spelllang = "en,ru,pl"
