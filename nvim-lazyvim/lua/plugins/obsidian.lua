@@ -15,7 +15,9 @@ return {
         -- path = vim.fn.expand("~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes/"),
       },
     },
-    preferred_link_style = "wiki",
+    link = {
+      style = "wiki",
+    },
     notes_subdir = "01 - Inbox",
     new_notes_location = "notes_subdir",
 
