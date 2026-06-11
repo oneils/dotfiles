@@ -10,8 +10,8 @@ vim.opt.tabstop = 4
 
 
 -- Multi-language spell checking
-vim.opt.spell = true
-vim.opt.spelllang = "en,ru,pl"
+-- vim.opt.spell = true
+-- vim.opt.spelllang = "en,ru,pl"
 
 -- Russian keyboard layout support for Vim hotkeys
 vim.opt.langmap =
