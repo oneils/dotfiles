@@ -67,9 +67,6 @@ return {
     attachments = {
       folder = "_attachments",
     },
-    completion = {
-      nvim_cmp = false,
-    },
     ui = {
       enable = false,
     },
