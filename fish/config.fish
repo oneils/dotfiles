@@ -20,6 +20,9 @@ alias --save fz='nvim (fzf -m --preview="bat --color=always {}")'
 # fzf bindings and completions
 fzf --fish | source
 
+# smarter cd
+zoxide init fish --cmd cd | source
+
 set -gx PATH /Library/TeX/texbin $PATH
 # source ~/.sdkman/bin/sdkman-init.sh
 alias python python3
@@ -32,4 +35,3 @@ export PATH="$HOME/.local/bin:$PATH"
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/lex/.lmstudio/bin
 # End of LM Studio CLI section
-
