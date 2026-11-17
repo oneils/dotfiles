@@ -1,23 +1,24 @@
 gui:
+  # Rosé Pine Moon: https://rosepinetheme.com/palette
   theme:
     activeBorderColor:
-      - '#89b4fa'
+      - '#c4a7e7' # iris
       - bold
     inactiveBorderColor:
-      - '#a6adc8'
+      - '#6e6a86' # muted
     optionsTextColor:
-      - '#89b4fa'
+      - '#9ccfd8' # foam
     selectedLineBgColor:
-      - '#313244'
+      - '#44415a' # highlight med
     cherryPickedCommitBgColor:
-      - '#45475a'
+      - '#56526e' # highlight high
     cherryPickedCommitFgColor:
-      - '#89b4fa'
+      - '#c4a7e7' # iris
     unstagedChangesColor:
-      - '#f38ba8'
+      - '#eb6f92' # love
     defaultFgColor:
-      - '#cdd6f4'
+      - '#e0def4' # text
     searchingActiveBorderColor:
-      - '#f9e2af'
+      - '#f6c177' # gold
   authorColors:
-    '*': '#b4befe'
+    '*': '#ea9a97' # rose
