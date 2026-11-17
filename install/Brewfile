@@ -17,6 +17,8 @@ brew "yazi"
 brew "tree"
 brew "fd"
 brew "wget"
+brew "eza"
+brew "zoxide"
 
 brew "ipcalc"
 brew "iperf3"
